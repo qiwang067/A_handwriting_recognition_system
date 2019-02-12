@@ -77,5 +77,5 @@ def handwritingClassTest():
         print ("the classifier came back with: %d, the real answer is: %d" % (classifierResult, classNumStr))
         if (classifierResult != classNumStr): errorCount += 1.0
     print ("\nthe total number of errors is: %d" % errorCount)
-    print( "\nthe total error rate is: %f" % (errorCount/float(mTest)))
+    print( "\nthe total accuracy rate is: %f" % (1.0-errorCount/float(mTest)))
 handwritingClassTest()
